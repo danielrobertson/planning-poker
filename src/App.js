@@ -4,6 +4,8 @@ class App extends Component {
   render() {
     return (
       <Container>
+        <h1>Planning Poker</h1>
+        <h2 class="ui dividing header">Issue 58: Integrate MyNotifications </h2>
         <CardGrid />
       </Container>
     );
@@ -34,9 +36,11 @@ class CardGrid extends Component {
 class Card extends Component {
   render() {
     return (
-      <div class="card">
-        <div class="image">
-          <img src={this.props.file} />
+      <div class="content">
+        <div class="centered card">
+          <div class="ui small image">
+            <img src={this.props.file} />
+          </div>
         </div>
       </div>
     );
