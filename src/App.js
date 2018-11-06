@@ -33,18 +33,16 @@ class CardGrid extends Component {
   }
 }
 
-class Card extends Component {
-  render() {
-    return (
-      <div class="content">
-        <div class="centered card">
-          <div class="ui small image">
-            <img src={this.props.file} />
-          </div>
+const Card = props => {
+  return (
+    <div class="content" style={{ margin: "8px" }}>
+      <div class="raised card">
+        <div class="ui small image">
+          <img src={props.file} />
         </div>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default App;
